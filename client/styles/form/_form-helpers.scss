@@ -1,0 +1,33 @@
+@import 'button';
+@import 'text';
+
+.form-wrapper {
+    margin: 36px auto 0;
+}
+
+.form-section{
+    margin-bottom: 27px;
+    &:last-of-type{
+        margin: 0;
+    }
+    .form-section-head {
+        border-bottom: 1px solid #999;
+        padding: 6px 0;
+        margin-bottom: 18px;
+        h3 {
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}
+
+.form-field {
+    margin-bottom: 18px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.form-actions {
+    margin-top: 20px;
+}

@@ -1,0 +1,103 @@
+<template name="singleShopLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = getShopName}}
+        
+        <div class="dashboard-wrapper">
+            <a href="#" id="down-report" class="btn btn-download">Download Report</a>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <a href="{{getRouterGroupPrefix}}/shop-transactions/{{getShopId}}" class="dashitem-wrapper" >
+                            <div class="dashitem-icon">
+                                <i class="material-icons">watch_later</i>
+                            </div>
+                            <div class="dashitem-title">
+                                Past Transactions<span>{{getPastTransactionNo}} Transactions</span>
+                            </div>
+                        </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="{{getRouterGroupPrefix}}/shop-products/{{getShopId}}" class="dashitem-wrapper" >
+                        <div class="dashitem-icon">
+                            <i class="material-icons">shopping_cart</i>
+                        </div>
+                        <div class="dashitem-title">
+                            Products<span>{{getProductsNo}} Products</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="row col-12 revenue-container">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Today's Revenue</h4>
+                            <span class="revenue-info">R {{getTodayRevenue}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Weekly Revenue</h4>
+                            <span class="revenue-info">R {{getlast7Revenue}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Monthly Revenue</h4>
+                            <span class="revenue-info">R {{getlast30Revenue}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Freepaid Balance</h4>
+                            <span class="revenue-info">R {{getFreepaidBalance}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-12 revenue-container">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Today's Profit</h4>
+                            <span class="revenue-info">R {{getTodayProfit}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Weekly Profit</h4>
+                            <span class="revenue-info">R {{getlast7Profit}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="revenue-wrapper">
+                            <h4 class="revenue-head">Monthly Profit</h4>
+                            <span class="revenue-info">R {{getlast30Profit}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="canvas-wrapper" style="height:400px;width: 100%;margin: 51px 0;">
+                        <canvas id="myChart" style="height:400px;width: 100%"></canvas>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="bestsellings">
+                        <h4 class="bestselling-head">Best Selling Brand</h4>
+                        <div class="bestselling-items">
+                            {{#each getTopSellingBrands}}
+                                <div class="bs-item">{{incremented @index}}. {{brandName}}</div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="bestsellings">
+                        <h4 class="bestselling-head">Best Selling Items</h4>
+                        <div class="bestselling-items">
+                            {{#each getTopSellingItems}}
+                                <div class="bs-item">{{incremented @index}}. {{brandName}} {{productName}}</div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{getShopWeeklyData}}
+    </div>
+</template>

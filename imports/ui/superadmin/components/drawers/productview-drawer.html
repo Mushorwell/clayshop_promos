@@ -1,0 +1,28 @@
+<template name="superadminShopProductViewDrawer">
+    <div id="drawer-shopproductview" class="drawer drawer--right">
+        <div class="drawer-header">
+            <h3>Product Info</h3>
+        </div>
+        <div class="drawer-body">
+            <div class="drawer-body-wrapper product-info">
+                {{#if getCurrentProduct="undefined"}}
+                <div class="drawer-info">
+                    Brand<span>{{getProductBrand}}</span>
+                </div>
+                <div class="drawer-info">
+                    Product Name<span>{{getProductName}}</span>
+                </div>
+                <div class="drawer-info">
+                    Product Size<span>{{getProductSize}}</span>
+                </div>
+                <div class="drawer-info">
+                    Stock Price<span>R {{getProductStockPrice}}</span>
+                </div>
+                <div class="drawer-info">
+                    Selling Price<span>R {{getProductPrice}}</span>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

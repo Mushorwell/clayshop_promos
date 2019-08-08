@@ -1,0 +1,33 @@
+<template name="shopkeeperPastTransactionViewDrawer">
+    <div id="drawer-pasttransactionview" class="drawer drawer--right">
+        <div class="drawer-header">
+            <h3>Transaction Info</h3>
+        </div>
+        <div class="drawer-body">
+            <div class="drawer-body-wrapper transaction-info">
+                {{#if getCurrentTrans}}
+                <div class="drawer-info">
+                    Date: <span>{{getTransDate}}</span>
+                </div>
+                <div class="drawer-info">
+                    Time: <span>{{getTransTime}}</span>
+                </div>
+                <div class="drawer-info">
+                    Products: <span>{{getTransProductsCount}}</span>
+                </div>
+                <div class="drawer-info">
+                    Total: <span>R {{getTransTotal}}</span>
+                </div>
+                <div class="drawer-info">
+                    {{#each getTransProducts}}
+                        {{productName}} -
+                        R{{sellingPrice}} -
+                        {{productCount}}
+                        
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

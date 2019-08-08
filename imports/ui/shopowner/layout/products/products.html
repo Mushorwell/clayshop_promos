@@ -1,0 +1,25 @@
+<template name="shopownerProductsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "Products" pageActions = "shopownerProductsPageActions"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Stock Price</th>
+                        <th scope="col">Selling Price</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getProducts}}
+                        {{> shopownerProductListing}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopownerProductViewDrawer }}
+        {{> shopownerProductEditDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

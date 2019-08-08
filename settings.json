@@ -1,0 +1,20 @@
+{
+    "public":{
+        "FreepaidDevAPI": {
+            "user":"5045854",
+            "pass":"1010310mM"
+        },
+        "tefoFPA": {
+            "user": "5068408",
+            "pass": "Tef0m0k"
+        },
+        "FreepaidFPA":{
+            "user":"1866231",
+            "pass":"1010310mM"
+        },
+        "newUser":{
+            "user":"5984193",
+            "pass":"1010310mM"
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<template name="shopSettingsForm">
+    <div class="form-wrapper d-block col-12 col-sm-8 col-md-6">
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shop Info</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Shop Name</label>
+                <input type="text" id="txtShopname" placeholder="ex. Joe' Spaza" />
+            </div>
+            <div class="form-field">
+                <label for="">Shop Category</label>
+                <select id="selShopCat" >
+                    <option value="sc-spaza">Spaza</option>
+                    <option value="sc-liquor">Liqour</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button class="form-btn" title="Update Shop Info">Update Shop Info</button>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shop Physical Address</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Street Address</label>
+                <input type="text" id="txtStreetaddress" placeholder="ex. 121 Twist Street" />
+            </div>
+            <div class="form-field">
+                <label for="">Township / Village</label>
+                <input type="text" id="txtTownship" placeholder="ex. Soweto" required/>
+            </div>
+            <div class="form-field">
+                <label for="">City</label>
+                <input type="text" id="txtCity" placeholder="ex. Johannesburg" />
+            </div>
+            <div class="form-field">
+                <label for="">Province</label>
+                <input type="text" id="txtProvince" placeholder="ex. Gauteng" required/>
+            </div>
+            <div class="form-field">
+                <label for="">Country</label>
+                <input type="text" id="txtCountry" placeholder="ex. Country" value="South Africa" readonly/>
+            </div>
+            <div class="form-field">
+                <label for="">Postal Code</label>
+                <input type="number" id="numPostalcode" placeholder="ex. 2001" />
+            </div>
+            <div class="form-actions">
+                <button class="form-btn" title="Update Shop Address">Update Shop Address</button>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shopkeeper Info</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Shopkeeper Name</label>
+                <input type="text" id="txtShopkeeper" placeholder="ex. John Doe" />
+            </div>
+            <div class="form-field">
+                <label for="">Email Address</label>
+                <input type="email" id="emEmailAddress" placeholder="ex. john@pavilionpos.co.za" />
+            </div>
+            <div class="form-field">
+                <label for="">Phone Number</label>
+                <input type="tel" placeholder="ex. +27845416362" id="telPhoneNumber" required/>
+            </div>
+            <div class="form-field">
+                <label for="">New Password</label>
+                <input type="password" id="passNewPassword" />
+            </div>
+            <div class="form-actions">
+                <button class="form-btn" title="Update Shopkeeper">Update Shopkeeper Info</button>
+            </div>
+        </div>
+        {{#if isAdmin}}
+            <div class="form-section" id="freepaid-form">
+                <div class="form-section-head">
+                    <h3>Freepaid Account</h3>
+                </div>
+                <div class="form-field">
+                    <label for="">Phone Number</label>
+                    <input type="tel" placeholder="ex. +27845416362" id="telFPPhoneNumber" required/>
+                </div>
+                <div class="form-field">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="ex. john@pavilionpos.co.za" id="emFPEmailAddress" required/>
+                </div>
+                <div class="form-field">
+                    <label for="">Password</label>
+                    <input type="password" id="passFPPassword" required/>
+                </div>
+                <div class="form-actions">
+                    <button class="form-btn btn-freepaid-acc" title="Update API">Update API</button>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>

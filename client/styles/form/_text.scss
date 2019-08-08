@@ -1,0 +1,19 @@
+input,
+select {
+    display: block;
+    border: 1px solid;
+    background: transparent;
+    width: 100%;
+    padding: 9px;
+    border-radius: 3px;
+}
+
+input[type=checkbox] {
+    width: unset;
+    vertical-align: text-top;
+}
+
+label {
+    font-size: 16px;
+    margin: 0;
+}

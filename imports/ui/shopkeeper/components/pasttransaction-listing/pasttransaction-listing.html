@@ -1,0 +1,9 @@
+<template name="shopkeeperPastTransactionListing">
+    <tr class="cm-listing pasttransactionlisting" id="{{transId}}">
+        <td scope="row">{{transDate}}</td>
+        <td>R {{transTotal}}</td>
+        <td>R {{transCash}}</td>
+        <td>{{itemCount}}</td>
+        <td class="text-right">{{> shopkeeperPastTransactionListingActions}}</td>
+    </tr>
+</template>

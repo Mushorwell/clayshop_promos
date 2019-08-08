@@ -1,0 +1,12 @@
+<template name="shopownerShopProductListing">
+    <tr class="cm-listing shopproductlisting" id="{{productId}}">
+        <td scope="row">
+            <input type="checkbox" class="cbShopProduct d-none" value="isShopProduct" {{isShopProduct}}/>
+            <div class="cust-cb {{isShopProduct}}"></div>
+        </td>
+        <td >{{productName}}</td>
+        <td>R {{sellingPrice}}</td>
+        <td>{{inStock}}</td>
+        <td class="text-right">{{> shopownerShopProductListingActions}}</td>
+    </tr>
+</template>

@@ -1,0 +1,25 @@
+<template name="shopTransactionsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = getShopName pageActions = "shopownerPastTransactionsPageActions"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">No. of Products</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getTransactions}}
+                        {{> shopownerPastTransactionListing}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopownerPastTransactionViewDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

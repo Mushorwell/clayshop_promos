@@ -1,0 +1,73 @@
+<template name="shopownerNewShopForm">
+    <div class="form-wrapper d-block col-12 col-sm-8 col-md-6">
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shop Info</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Shop Name</label>
+                <input type="text" id="txtShopname" placeholder="ex. Joe' Spaza" />
+            </div>
+            <div class="form-field">
+                <label for="">Shop Category</label>
+                <select id="selShopCat" >
+                    <option value="sc-spaza">Shop</option>
+                    <option value="sc-liquor">Liqour</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shop Physical Address</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Street Address</label>
+                <input type="text" id="txtStreetaddress" placeholder="ex. 121 Twist Street" />
+            </div>
+            <div class="form-field">
+                <label for="">Township / Village</label>
+                <input type="text" id="txtTownship" placeholder="ex. Soweto" required/>
+            </div>
+            <div class="form-field">
+                <label for="">City</label>
+                <input type="text" id="txtCity" placeholder="ex. Johannesburg" />
+            </div>
+            <div class="form-field">
+                <label for="">Province</label>
+                <input type="text" id="txtProvince" placeholder="ex. Gauteng" required/>
+            </div>
+            <div class="form-field">
+                <label for="">Country</label>
+                <input type="text" id="txtCountry" placeholder="ex. Country" value="South Africa" readonly/>
+            </div>
+            <div class="form-field">
+                <label for="">Postal Code</label>
+                <input type="number" id="numPostalcode" placeholder="ex. 2001" />
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Shopkeeper Info</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Shopkeeper Name</label>
+                <input type="text" id="txtShopkeeper" placeholder="ex. John Doe" />
+            </div>
+            <div class="form-field">
+                <label for="">Email Address</label>
+                <input type="email" id="emEmailAddress" placeholder="ex. john@pavilionpos.co.za" />
+            </div>
+            <div class="form-field">
+                <label for="">Phone Number</label>
+                <input type="tel" placeholder="ex. +27845416362" id="telPhoneNumber" required/>
+            </div>
+            <div class="form-field">
+                <label for="">User Role</label>
+                <input type="text" placeholder="User Role" value="shopKeeper" id="txtUserRole" readonly/>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="form-btn" title="Save New Shop">Save New Shop</button>
+        </div>
+    </div>
+</template>

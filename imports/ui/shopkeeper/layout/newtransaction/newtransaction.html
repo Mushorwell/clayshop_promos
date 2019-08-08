@@ -1,0 +1,11 @@
+<template name="shopkeeperNewTransactionLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "New Transactions" pageActions = "shopkeeperNewTransactionPageActions"}}
+        <div class="cm-table-wrapper">
+            <table id="table_id" class="display">
+            </table>
+        </div>
+        {{> shopkeeperTransactionCartDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

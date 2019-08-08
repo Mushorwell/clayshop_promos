@@ -1,0 +1,25 @@
+// css reset for the browser
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+#__blaze-root {
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}

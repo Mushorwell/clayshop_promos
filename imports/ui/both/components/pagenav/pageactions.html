@@ -1,0 +1,50 @@
+<!-- Super Admin Page Actions -->
+<template name="superadminUsersPageActions">
+    <ul >
+        <li class="action"><a href="/admin/newuser" title="Add New User"><i class="material-icons">add</i></a></li>
+    </ul>
+</template>
+<template name="superadminNewUserPageActions">
+    <ul >
+        <li class="action"><a href="#" title="Save New User"><i class="material-icons">save</i></a></li>
+    </ul>
+</template>
+<template name="superadminPromosPageActions">
+    <ul >
+        <li class="action"><a href="/admin/newpromo" title="Add New Promo"><i class="material-icons">add</i></a></li>
+    </ul>
+</template>
+
+<!-- Shop Owner Page Actions -->
+<template name="shopownerShopsPageActions">
+    <ul >
+        <li class="action"><a href="/shop-owner/newshop" title="Add New Shop"><i class="material-icons">add</i></a></li>
+    </ul>
+</template>
+
+<template name="shopownerPastTransactionsPageActions">
+    <ul >
+        <li class="action"><a href="#" title="Clear Transaction Data" class="delete-data"><i class="material-icons">delete</i></a></li>
+    </ul>
+</template>
+
+<template name="shopownerProductsPageActions">
+    <ul >
+        <li class="action"><a href="/shop-owner/new-product" title="Add New Product"><i class="material-icons">add</i></a></li>
+    </ul>
+</template>
+
+<!-- Shop Keeper Page Account -->
+<template name="shopkeeperNewTransactionPageActions">
+    <ul >
+        <li class="action"><select name="productCategory" id="selProductCategory">
+            <option>Filter Product Category</option>
+            <option>All</option>
+            {{#each getProductCategories}}
+                <option value="{{categoryValue}}">{{categoryName}}</option>
+            {{/each}}
+        </select></li>
+        <li class="action"></li>
+        <li class="action"><a href="" class="btn-drawer" id="btn-drawer-cart" title="Show Cart"><i class="material-icons">shopping_cart</i></a></li>
+    </ul>
+</template>

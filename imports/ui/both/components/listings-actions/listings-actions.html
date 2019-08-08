@@ -1,0 +1,86 @@
+<!-- Superadmin Listing Actions -->
+<template name="superadminUsersListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="/admin/logs/{{userId}}" title="User's Logs" id="btn-drawer-shopproducts"><i class="material-icons">list_alt</i></a></li>
+        <li><a href="#" class="btn-drawer" title="Edit User" id="btn-drawer-useredit"><i class="material-icons">create</i></a></li>
+        <li><a href="#" class="btn-drawer" title="View User" id="btn-drawer-userview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+<template name="superadminShopListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="/shop-owner/shop-settings/{{shopId}}"><i class="material-icons">settings</i></a></li>
+        <li><a href="/shop-owner/shop-logs/{{shopId}}"><i class="material-icons">list_alt</i></a></li>
+        <li><a href="/admin/shop-products/{{shopId}}" title="Shop Products" id="btn-drawer-shopproducts"><i class="material-icons">shopping_basket</i></a></li>
+        <li><a href="/admin/shop/{{shopId}}" class="" title="View Shop" id="btn-drawer-shopview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="superadminShopProductListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" title="View Product" id="btn-drawer-shopproductview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="shopLogListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" title="View Log" id="btn-drawer-shoplogview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="superadminLogsListingActions">
+    <ul class="listing-actions-wrapper">
+            <li><a href="https://www.google.com/maps/@{{latitude}},{{longitude}},15z" target="_h" title="View User Map" ><i class="material-icons">link</i></a></li>
+        <li><a href="#" class="btn-drawer" title="View User" id="btn-drawer-userview"><i class="material-icons">delete</i></a></li>
+    </ul>
+</template>
+
+<!-- Shopowner Listings Actions -->
+<template name="shopownerShopListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="/shop-owner/shop-settings/{{shopId}}"><i class="material-icons">settings</i></a></li>
+        <li><a href="/shop-owner/shop-logs/{{shopId}}"><i class="material-icons">list_alt</i></a></li>
+        <li><a href="/shop-owner/shop-products/{{shopId}}" title="Shop Products"><i class="material-icons">shopping_basket</i></a></li>
+        <li class="d-none"><a href="#" class="btn-drawer d-none" title="Edit Shop" id="btn-drawer-shopedit"><i class="material-icons">create</i></a></li>
+        <li><a href="#" id="btn-delete-shop" title="Delete Shop"><i class="material-icons">delete</i></a></li>
+        <!-- <li><a href="#" class="btn-modal" data-toggle="modal" data-target="#deleteShopModal" title="Delete Shop"><i class="material-icons">delete</i></a></li> -->
+        <li><a href="/shop-owner/shop/{{shopId}}" class="" title="View Shop"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="shopownerProductListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" title="Edit Product" id="btn-drawer-productedit"><i class="material-icons">create</i></a></li>
+        <li><a href="#" class="btn-drawer" title="View Product" id="btn-drawer-productview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="shopownerShopProductListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" title="Edit Product" id="btn-drawer-shopproductedit"><i class="material-icons">create</i></a></li>
+    </ul>
+</template>
+
+<template name="shopownerPastTransactionListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" id="btn-drawer-pasttransactionview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<!-- Shopkeeper Listing Actions -->
+<template name="shopkeeperProductListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" id="btn-drawer-productview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>
+
+<template name="shopkeeperNewTransactionProductListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" id="btn-drawer-cart"><i class="material-icons">add_shopping_cart</i></a></li>
+    </ul>
+</template>
+
+<template name="shopkeeperPastTransactionListingActions">
+    <ul class="listing-actions-wrapper">
+        <li><a href="#" class="btn-drawer" id="btn-drawer-pasttransactionview"><i class="material-icons">visibility</i></a></li>
+    </ul>
+</template>

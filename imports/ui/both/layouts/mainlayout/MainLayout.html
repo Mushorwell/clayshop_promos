@@ -1,0 +1,7 @@
+<template name="MainLayout">
+    {{> navBar}}
+    <div class="main-content">
+        {{> Template.dynamic template=sideNav }}
+        {{> Template.dynamic template=pageContent }}
+    </div>
+</template>

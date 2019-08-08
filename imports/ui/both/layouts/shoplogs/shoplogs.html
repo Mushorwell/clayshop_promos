@@ -1,0 +1,24 @@
+<template name="shopLogsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = getShopName}}
+        <div class="cm-table-wrapper">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>Shop Name</th>
+                        <th>Shop Keeper</th>
+                        <th>Date</th>
+                        <th class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getShopLogs}}
+                        {{> shopLogListing}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopLogViewDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

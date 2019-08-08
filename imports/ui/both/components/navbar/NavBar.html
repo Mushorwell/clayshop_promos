@@ -1,0 +1,17 @@
+<template name="navBar">
+    <nav class="nav-bar">
+        <div class="account-wrapper">
+            <div class="account-avi">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="account-user">{{getUser}}</div>
+            <div class="account-profile-dropdown">
+                <div class="account-profile-info">
+                    <h4>{{getUser}}<span>{{getEmail}}</span></h4>
+                    <a href="{{getRouterGroupPrefix}}/settings">Settings</a>
+                </div>
+                <a href="" class="btn-logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+</template>

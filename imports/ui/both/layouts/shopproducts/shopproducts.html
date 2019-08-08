@@ -1,0 +1,33 @@
+<template name="shopProductsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = getShopName}}
+        <div class="cm-table-wrapper">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        {{#unless isAdmin}}
+                        <th></th>{{/unless}}
+                        <th>Product Name</th>
+                        <th>Selling Price</th>
+                        <th>In Stock</th>
+                        <th class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#if isAdmin}}
+                        {{#each getProductsAdmin}}
+                            {{> superadminShopProductListing}}
+                        {{/each}}
+                    {{else}}
+                        {{#each getProducts}}
+                            {{> shopownerShopProductListing}}
+                        {{/each}}
+                    {{/if}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopownerShopProductEditDrawer }}
+        {{> superadminShopProductViewDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

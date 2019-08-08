@@ -1,0 +1,23 @@
+<template name="shopkeeperPrepaidLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "Prepaid"}}
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li>
+                    <a data-toggle="tab" href="#pp-airtime-tab" class="active show">Airtime</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#pp-electricity-tab" class="">Electricity</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="pp-airtime-tab" class="tab-pane fade active show">
+                    {{> ppAirtimeForm}}
+                </div>
+                <div id="pp-electricity-tab" class="tab-pane fade">
+                    {{>ppElectricityForm}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

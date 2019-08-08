@@ -1,0 +1,27 @@
+<template name="superadminUsersLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "Users" pageActions = "superadminUsersPageActions"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Shop Owner</th>
+                        <th scope="col">UserType</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Address</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getUsers}}
+                        {{> superadminUserListing }}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> superadminUserEditDrawer}}
+        {{> superadminUserViewDrawer}}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

@@ -1,0 +1,42 @@
+<template name="shopownerNewProductForm">
+    <div class="form-wrapper d-block col-12 col-sm-8 col-md-6">
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Product Info</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Pre Loaded Product</label>
+                <select id="selPreLoaded" placeholder="Select Preloaded Product">
+                    <option val="null">Non Preloaded Product</option>
+                    {{#each getPreLoadedProducts}}
+                        <option value="{{INDEX}}">{{BRAND}} {{NAME}} {{SIZE}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="">Brand Name</label>
+                <input type="text" id="txtBrandname" placeholder="ex. Koo" />
+            </div>
+            <div class="form-field">
+                <label for="">Item Name</label>
+                <input type="text" id="txtItemname" placeholder="ex. Beans" />
+            </div>
+            <div class="form-field">
+                <label for="">Item Size</label>
+                <input type="text" id="txtItemsize" placeholder="ex. 40KG" />
+            </div>
+            <div class="form-field">
+                <label for="">Stock Price</label>
+                <input type="number" id="numStockprice" min=".01" step=".01" placeholder="ex. 20.35" />
+            </div>
+            <div class="form-field">
+                <label for="">Selling Price</label>
+                <input type="number" id="numSellingprice" min=".01" step=".01" placeholder="ex. 30.32" />
+            </div>
+            
+        </div>
+        <div class="form-actions">
+            <button class="form-btn" title="Save New Product">Save New Product</button>
+        </div>
+    </div>
+</template>

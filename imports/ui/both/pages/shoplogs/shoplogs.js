@@ -1,0 +1,1 @@
+import './shoplogs.html';

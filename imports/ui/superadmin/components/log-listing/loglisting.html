@@ -1,0 +1,11 @@
+<template name="superadminLogListing">
+    <tr class="cm-listing loglisting" id={{userId}}>
+        <td scope="row">{{date}}</td>
+        <td>{{userId}}</td>
+        <td>{{ipaddress}}</td>
+        <td>{{city}}, {{region}}, {{country}}</td>
+        <td>{{latitude}}</td>
+        <td>{{longitude}}</td>
+        <td class="text-right">{{> superadminLogsListingActions}}</td>
+    </tr>
+</template>

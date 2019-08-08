@@ -1,0 +1,57 @@
+<template name="superadminNewUserForm">
+    <div class="form-wrapper d-block col-12 col-sm-8 col-md-6">
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Personal Information</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Full Name</label>
+                <input type="text" placeholder="ex. John Doe" id="txtFullName" required/>
+            </div>
+            <div class="form-field">
+                <label for="">Email</label>
+                <input type="text" placeholder="ex. john@pavilionpos.co.za" id="emEmail" required/>
+            </div>
+            <div class="form-field">
+                <label for="">Phone Number</label>
+                <input type="tel" placeholder="ex. +27845416362" id="telPhoneNumber" required/>
+            </div>
+            <div class="form-field">
+                <label for="">User Role</label>
+                <input type="text" placeholder="User Role" value="shopowner" id="txtUserRole" readonly/>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-head">
+                <h3>Physical Address</h3>
+            </div>
+            <div class="form-field">
+                <label for="">Street Address</label>
+                <input type="text" id="txtStreetaddress" placeholder="ex. 121 Twist Street" />
+            </div>
+            <div class="form-field">
+                <label for="">Township / Village</label>
+                <input type="text" id="txtTownship" placeholder="ex. Soweto" required/>
+            </div>
+            <div class="form-field">
+                <label for="">City</label>
+                <input type="text" id="txtCity" placeholder="ex. Johannesburg" />
+            </div>
+            <div class="form-field">
+                <label for="">Province</label>
+                <input type="text" id="txtProvince" placeholder="ex. Gauteng" required/>
+            </div>
+            <div class="form-field">
+                <label for="">Country</label>
+                <input type="text" id="txtCountry" placeholder="ex. Country" value="South Africa" readonly/>
+            </div>
+            <div class="form-field">
+                <label for="">Postal Code</label>
+                <input type="number" id="numPostalcode" placeholder="ex. 2001" />
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="form-btn" title="Save New User">Save New User</button>
+        </div>
+    </div>
+</template>

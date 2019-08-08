@@ -1,0 +1,25 @@
+<template name="superadminUserLogsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "User Logs"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">User Id</th>
+                        <th scope="col">IP Address</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Latitude</th>
+                        <th scope="col">Longitude</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getUserLogs}}
+                        {{> superadminLogListing }}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,27 @@
+// Main file where we import all the other scss files
+
+// Helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+@import 'helpers/helpers';
+
+// Base
+@import 'base/font';
+@import 'base/normalize';
+@import 'base/general';
+
+// Elements
+@import 'elements/grid';
+
+// Forms
+@import 'form/form-helpers';
+
+// Layout
+@import 'layout/layout';
+
+// Layout
+@import 'components/components';
+
+// Pages
+@import 'pages/pages';

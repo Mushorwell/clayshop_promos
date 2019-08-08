@@ -1,0 +1,30 @@
+<template name="shopLogViewDrawer">
+    <div id="drawer-shoplogview" class="drawer drawer--right">
+        <div class="drawer-header">
+            <h3>Full Log Info</h3>
+        </div>
+        <div class="drawer-body">
+            <div class="drawer-body-wrapper log-info">
+                {{#if hasLogSelected }}
+                    {{#with getLogInfo}}
+                        <div class="drawer-info">
+                            Date<span>{{date}}</span>
+                        </div>
+                        <div class="drawer-info">
+                            Shop Name<span>{{shopName}}</span>
+                        </div>
+                        <div class="drawer-info">
+                            Shopkeeper Name<span>{{shopkeeperName}}</span>
+                        </div>
+                        <div class="drawer-info">
+                            Cash At Hand<span>{{cashAtHand}}</span>
+                        </div>
+                        <div class="drawer-info">
+                            Feedback & Suggestions<span>{{suggestions}}</span>
+                        </div>
+                    {{/with}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,6 @@
+// a group of declarations that you want to re-use
+@mixin transform($property) {
+    -webkit-transform: $property;
+        -ms-transform: $property;
+            transform: $property;
+}

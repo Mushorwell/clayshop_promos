@@ -1,0 +1,23 @@
+<template name="shopkeeperProductsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "Products"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Selling Price</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getProducts}}
+                        {{> shopkeeperProductListing}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopkeeperProductViewDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

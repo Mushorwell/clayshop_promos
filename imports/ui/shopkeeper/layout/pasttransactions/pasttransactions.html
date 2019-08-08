@@ -1,0 +1,25 @@
+<template name="shopkeeperPastTransactionsLayout">
+    <div class="inner-content-wrapper">
+        {{> pageNav pageHead = "Past Transactions"}}
+        <div class="cm-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Cash</th>
+                        <th scope="col">No. of Products</th>
+                        <th scope="col" class="text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each getTransactions}}
+                        {{> shopkeeperPastTransactionListing}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{> shopkeeperPastTransactionViewDrawer }}
+        <div class="drawer-overlay"></div>
+    </div>
+</template>

@@ -1,0 +1,52 @@
+{
+  "name": "clayshop2.0",
+  "private": true,
+  "scripts": {
+    "start": "meteor npm install && meteor --settings settings.json",
+    "test": "meteor --settings settings.json --inspect",
+    "test1": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "algoliasearch": "^3.29.0",
+    "autoprefixer": "^8.6.3",
+    "bootstrap": "^4.1.1",
+    "chart.js": "^2.7.2",
+    "css-mqpacker": "^6.0.2",
+    "csv": "^4.0.0",
+    "csv-stringify": "^4.3.1",
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
+    "easy-soap-request": "^2.3.0",
+    "easysoap": "^2.0.2",
+    "feather-icons": "^4.21.0",
+    "fibers": "^3.1.1",
+    "instantsearch.js": "^3.4.0",
+    "jquery": "^3.4.0",
+    "jshint": "^2.9.6",
+    "json2csv": "^4.5.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "npm": "^6.4.0",
+    "soap": "^0.25.0",
+    "strong-soap": "^1.18.0",
+    "sweetalert": "^2.1.0",
+    "sweetalert2": "^8.8.5",
+    "xml-js": "^1.6.11"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "meteor-node-stubs": "^0.4.1",
+    "popper.js": "^1.15.0",
+    "postcss-csso": "^3.0.0",
+    "postcss-load-config": "^2.0.0"
+  }
+}

@@ -1,0 +1,48 @@
+<template name="shopkeeperHome">
+    <div class="pageContent">
+            <div class="dashboard-wrapper">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="/shop-keeper/new-transaction" class="dashitem-wrapper" >
+                            <div class="dashitem-icon">
+                                <i class="material-icons">shopping_basket</i>
+                            </div>
+                            <div class="dashitem-title">
+                                New Transaction
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="/shop-keeper/past-transactions" class="dashitem-wrapper" >
+                            <div class="dashitem-icon">
+                                <i class="material-icons">watch_later</i>
+                            </div>
+                            <div class="dashitem-title">
+                                Past Transactions<span>{{getPastTransactionNo}} Transactions</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="/shop-keeper/products" class="dashitem-wrapper" >
+                            <div class="dashitem-icon">
+                                <i class="material-icons">shopping_cart</i>
+                            </div>
+                            <div class="dashitem-title">
+                                Products<span>{{getProductsNo}} Products</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="/shop-keeper/promos" class="dashitem-wrapper" >
+                            <div class="dashitem-icon">
+                                <i class="material-icons">whatshot</i>
+                            </div>
+                            <div class="dashitem-title">
+                                Promos<span>{{getPromosNo}} Promos</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</template>

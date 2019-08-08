@@ -1,0 +1,21 @@
+import { Mongo } from 'meteor/mongo';
+
+export const ShopOwners = new Mongo.Collection('shopOwners');
+export const ShopKeepers = new Mongo.Collection('shopKeepers');
+export const Addresses = new Mongo.Collection('Addresses');
+export const Shops = new Mongo.Collection('Shops');
+export const Products = new Mongo.Collection('Products');
+export const Brands = new Mongo.Collection('Brands');
+export const ShopProducts = new Mongo.Collection('shopProducts');
+export const ShopProductsCustom = new Mongo.Collection('shopProductsCustom');
+export const StockRecords = new Mongo.Collection('stockRecords');
+export const Promos = new Mongo.Collection('Promos');
+export const Transactions = new Mongo.Collection('Transactions');
+export const ProductCategories = new Mongo.Collection('productCategories');
+export const CardTransactions = new Mongo.Collection('cardTransactions');
+export const PaymentTypes = new Mongo.Collection("paymentTypes");
+export const ShopTypes = new Mongo.Collection("shopTypes");
+export const UserLogs = new Mongo.Collection("userLogs");
+export const ShopKeepersLogs = new Mongo.Collection("shopKeepersLogs");
+export const PrepaidLogs = new Mongo.Collection("prepaidLogs");
+export const FreepaidUsers = new Mongo.Collection("freepaidUsers");
