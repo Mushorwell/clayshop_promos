@@ -17,7 +17,7 @@
     "css-mqpacker": "^6.0.2",
     "csv": "^4.0.0",
     "csv-stringify": "^4.3.1",
-    "datatables.net": "^1.10.19",
+    "datatables.net": "^1.10.22",
     "datatables.net-dt": "^1.10.19",
     "easy-soap-request": "^2.3.0",
     "easysoap": "^2.0.2",
